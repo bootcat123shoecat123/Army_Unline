@@ -1,0 +1,10 @@
+[gd_resource type="StyleBoxTexture" load_steps=2 format=3 uid="uid://bp2rj1kmwln32"]
+
+[ext_resource type="Texture2D" uid="uid://dvu1okwdtj7a" path="res://Img/—Pngtree—military texture camouflage background_1343222.png" id="1_64qqf"]
+
+[resource]
+texture = ExtResource("1_64qqf")
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 2
+region_rect = Rect2(0, 0, 1920.24, 900)
+modulate_color = Color(0.560784, 1, 0.333333, 1)

@@ -1,3 +1,8 @@
 res://default_env.tres
 res://Intro.tscn
 res://new scene.tscn
+res://TitleButton.tres
+res://Scenes/Intro.tscn
+res://Scenes/new scene.tscn
+res://Script/StageChange.cs
+res://Script/TitleSceneControll.gd

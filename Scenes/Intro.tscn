@@ -1,0 +1,144 @@
+[gd_scene load_steps=10 format=3 uid="uid://bxppp3ws8fcta"]
+
+[ext_resource type="FontFile" uid="uid://b5dvcg7di0ptt" path="res://Font/OSWALD-BOLD.TTF" id="1_n17ff"]
+[ext_resource type="StyleBox" uid="uid://bp2rj1kmwln32" path="res://TitleButton.tres" id="2_v7871"]
+[ext_resource type="Texture2D" uid="uid://dvu1okwdtj7a" path="res://Img/—Pngtree—military texture camouflage background_1343222.png" id="3_q6eje"]
+[ext_resource type="Script" path="res://Script/TitleSceneControll.gd" id="4_cd4ci"]
+
+[sub_resource type="Gradient" id="3"]
+interpolation_mode = 2
+offsets = PackedFloat32Array(0.00649351, 0.74026, 0.779221, 1)
+colors = PackedColorArray(2.03352e-06, 0.453848, 9.62615e-08, 1, 7.88178e-06, 0.639547, 5.95434e-07, 1, 1.32443e-05, 0.809823, 1.05315e-06, 1, 1.44392e-05, 0.847765, 1.15514e-06, 1)
+
+[sub_resource type="GradientTexture2D" id="4"]
+gradient = SubResource("3")
+width = 1920
+height = 1080
+fill_from = Vector2(0.545872, 0)
+fill_to = Vector2(0.559633, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_pawb0"]
+texture = ExtResource("3_q6eje")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wbrho"]
+texture = ExtResource("3_q6eje")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7fy4n"]
+texture = ExtResource("3_q6eje")
+
+[node name="World" type="Node2D"]
+
+[node name="BG" type="Sprite2D" parent="."]
+position = Vector2(962, 535)
+texture = SubResource("4")
+
+[node name="Node" type="Node" parent="."]
+
+[node name="Start" type="Button" parent="Node"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -927.0
+offset_top = 360.0
+offset_right = -377.0
+offset_bottom = 460.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_disabled_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_n17ff")
+theme_override_font_sizes/font_size = 45
+theme_override_styles/normal = ExtResource("2_v7871")
+theme_override_styles/hover = ExtResource("2_v7871")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_pawb0")
+text = "Start"
+icon_alignment = 1
+expand_icon = true
+script = ExtResource("4_cd4ci")
+
+[node name="Controll" type="Button" parent="Node"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -275.0
+offset_top = 360.0
+offset_right = 275.0
+offset_bottom = 460.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_disabled_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_n17ff")
+theme_override_font_sizes/font_size = 45
+theme_override_styles/normal = ExtResource("2_v7871")
+theme_override_styles/hover = ExtResource("2_v7871")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_wbrho")
+text = "Controll"
+icon_alignment = 1
+expand_icon = true
+script = ExtResource("4_cd4ci")
+
+[node name="End" type="Button" parent="Node"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 373.0
+offset_top = 360.0
+offset_right = 923.0
+offset_bottom = 460.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_disabled_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_n17ff")
+theme_override_font_sizes/font_size = 45
+theme_override_styles/normal = ExtResource("2_v7871")
+theme_override_styles/hover = ExtResource("2_v7871")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_7fy4n")
+text = "End"
+icon_alignment = 1
+expand_icon = true
+script = ExtResource("4_cd4ci")
+
+[node name="Node" type="Node" parent="Node"]
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="Node/Node"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -350.0
+offset_top = -118.5
+offset_right = 350.0
+offset_bottom = 118.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/normal_font = ExtResource("1_n17ff")
+theme_override_font_sizes/normal_font_size = 150
+bbcode_enabled = true
+text = "[center]Unline"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Node/Node"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -350.0
+offset_top = -240.0
+offset_right = 350.0
+offset_bottom = -39.9999
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/normal_font = ExtResource("1_n17ff")
+theme_override_font_sizes/normal_font_size = 120
+bbcode_enabled = true
+text = "[center]Army"
+
+[connection signal="pressed" from="Node/Start" to="Node/Controll" method="_start_game"]
+[connection signal="pressed" from="Node/Controll" to="Node/Start" method="_setting"]
+[connection signal="pressed" from="Node/End" to="Node/Controll" method="_end_game"]

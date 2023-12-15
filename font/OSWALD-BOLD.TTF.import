@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://b5dvcg7di0ptt"
-path="res://.godot/imported/OSWALD-BOLD.TTF-b06edf1e1ba6a19ca8f7119ff9a3179e.fontdata"
+path="res://.godot/imported/OSWALD-BOLD.TTF-9660334eee43ac6188d8f93275ed9cde.fontdata"
 
 [deps]
 
-source_file="res://font/OSWALD-BOLD.TTF"
-dest_files=["res://.godot/imported/OSWALD-BOLD.TTF-b06edf1e1ba6a19ca8f7119ff9a3179e.fontdata"]
+source_file="res://Font/OSWALD-BOLD.TTF"
+dest_files=["res://.godot/imported/OSWALD-BOLD.TTF-9660334eee43ac6188d8f93275ed9cde.fontdata"]
 
 [params]
 

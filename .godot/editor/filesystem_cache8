@@ -1,13 +1,17 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1702332904
-default_env.tres::Environment::4405855813027929707::1702332716::0::1::::<><>::
-Intro.tscn::PackedScene::4032668800980450310::1702332716::0::1::::<><>::uid://dvu1okwdtj7a::::res://img/—Pngtree—military texture camouflage background_1343222.png<>uid://b5dvcg7di0ptt::::res://font/OSWALD-BOLD.TTF
-new scene.tscn::PackedScene::3391322654587332320::1702331889::0::1::::<><>::
+::res://::1702422524
+default_env.tres::Environment::4405855813027929707::1702422524::0::1::::<><>::
+TitleButton.tres::StyleBoxTexture::3496041180275595455::1702422524::0::1::::<><>::uid://dvu1okwdtj7a::::res://Img/—Pngtree—military texture camouflage background_1343222.png
 新文字文件.txt::TextFile::-1::1698071784::0::1::::<><>::
-::res://font/::1702332866
-OSWALD-BOLD.TTF::FontFile::4499558119253997181::1702329504::1702332716::1::::<><>::
-OSWALD-REGULAR.TTF::FontFile::7569384449544280447::1702329504::1702332719::1::::<><>::
-::res://img/::1702332866
-icon.png::CompressedTexture2D::1921396580307429819::1697519856::1702329849::1::::<><>::
-—Pngtree—military texture camouflage background_1343222.png::CompressedTexture2D::255179986025501804::1698071749::1702329849::1::::<><>::
-::res://script/::1702329714
+::res://Font/::1702421374
+OSWALD-BOLD.TTF::FontFile::4499558119253997181::1702329504::1702421374::1::::<><>::
+OSWALD-REGULAR.TTF::FontFile::7569384449544280447::1702329504::1702421374::1::::<><>::
+::res://Img/::1702421368
+icon.png::CompressedTexture2D::1921396580307429819::1697519856::1702421368::1::::<><>::
+—Pngtree—military texture camouflage background_1343222.png::CompressedTexture2D::255179986025501804::1698071749::1702421368::1::::<><>::
+::res://Scenes/::1702422524
+Intro.tscn::PackedScene::4032668800980450310::1702422524::0::1::::<><>::uid://b5dvcg7di0ptt::::res://Font/OSWALD-BOLD.TTF<>uid://bp2rj1kmwln32::::res://TitleButton.tres<>uid://dvu1okwdtj7a::::res://Img/—Pngtree—military texture camouflage background_1343222.png
+new scene.tscn::PackedScene::3391322654587332320::1702422524::0::1::::<><>::
+StageChange.cs::CSharpScript::-1::1702423736::0::1::::<><>::
+::res://Script/::1702329714
+::res://Texture/::1702421348

@@ -1,0 +1,17 @@
+D:\Godot_v4.2-stable_mono_win64\Godot_v4.2-stable_mono_win64\program\ArmyUnline\.godot\mono\temp\bin\Debug\Army Unline.deps.json
+D:\Godot_v4.2-stable_mono_win64\Godot_v4.2-stable_mono_win64\program\ArmyUnline\.godot\mono\temp\bin\Debug\Army Unline.runtimeconfig.json
+D:\Godot_v4.2-stable_mono_win64\Godot_v4.2-stable_mono_win64\program\ArmyUnline\.godot\mono\temp\bin\Debug\Army Unline.dll
+D:\Godot_v4.2-stable_mono_win64\Godot_v4.2-stable_mono_win64\program\ArmyUnline\.godot\mono\temp\bin\Debug\Army Unline.pdb
+D:\Godot_v4.2-stable_mono_win64\Godot_v4.2-stable_mono_win64\program\ArmyUnline\.godot\mono\temp\bin\Debug\GodotSharp.dll
+D:\Godot_v4.2-stable_mono_win64\Godot_v4.2-stable_mono_win64\program\ArmyUnline\.godot\mono\temp\bin\Debug\GodotSharpEditor.dll
+D:\Godot_v4.2-stable_mono_win64\Godot_v4.2-stable_mono_win64\program\ArmyUnline\.godot\mono\temp\obj\Debug\Army Unline.csproj.AssemblyReference.cache
+D:\Godot_v4.2-stable_mono_win64\Godot_v4.2-stable_mono_win64\program\ArmyUnline\.godot\mono\temp\obj\Debug\Army Unline.GeneratedMSBuildEditorConfig.editorconfig
+D:\Godot_v4.2-stable_mono_win64\Godot_v4.2-stable_mono_win64\program\ArmyUnline\.godot\mono\temp\obj\Debug\Army Unline.AssemblyInfoInputs.cache
+D:\Godot_v4.2-stable_mono_win64\Godot_v4.2-stable_mono_win64\program\ArmyUnline\.godot\mono\temp\obj\Debug\Army Unline.AssemblyInfo.cs
+D:\Godot_v4.2-stable_mono_win64\Godot_v4.2-stable_mono_win64\program\ArmyUnline\.godot\mono\temp\obj\Debug\Army Unline.csproj.CoreCompileInputs.cache
+D:\Godot_v4.2-stable_mono_win64\Godot_v4.2-stable_mono_win64\program\ArmyUnline\.godot\mono\temp\obj\Debug\Army Unline.csproj.CopyComplete
+D:\Godot_v4.2-stable_mono_win64\Godot_v4.2-stable_mono_win64\program\ArmyUnline\.godot\mono\temp\obj\Debug\Army Unline.dll
+D:\Godot_v4.2-stable_mono_win64\Godot_v4.2-stable_mono_win64\program\ArmyUnline\.godot\mono\temp\obj\Debug\refint\Army Unline.dll
+D:\Godot_v4.2-stable_mono_win64\Godot_v4.2-stable_mono_win64\program\ArmyUnline\.godot\mono\temp\obj\Debug\Army Unline.pdb
+D:\Godot_v4.2-stable_mono_win64\Godot_v4.2-stable_mono_win64\program\ArmyUnline\.godot\mono\temp\obj\Debug\Army Unline.genruntimeconfig.cache
+D:\Godot_v4.2-stable_mono_win64\Godot_v4.2-stable_mono_win64\program\ArmyUnline\.godot\mono\temp\obj\Debug\ref\Army Unline.dll
