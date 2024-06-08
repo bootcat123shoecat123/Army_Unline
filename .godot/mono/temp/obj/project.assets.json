@@ -88,24 +88,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Hoshi\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\USER\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Godot_v4.2-stable_mono_win64\\Godot_v4.2-stable_mono_win64\\program\\ArmyUnline\\Army Unline.csproj",
+      "projectUniqueName": "F:\\Godot_v4.2-stable_mono_win64\\program\\ArmyUnline\\Army Unline.csproj",
       "projectName": "Army Unline",
-      "projectPath": "D:\\Godot_v4.2-stable_mono_win64\\Godot_v4.2-stable_mono_win64\\program\\ArmyUnline\\Army Unline.csproj",
-      "packagesPath": "C:\\Users\\Hoshi\\.nuget\\packages\\",
-      "outputPath": "D:\\Godot_v4.2-stable_mono_win64\\Godot_v4.2-stable_mono_win64\\program\\ArmyUnline\\.godot\\mono\\temp\\obj\\",
+      "projectPath": "F:\\Godot_v4.2-stable_mono_win64\\program\\ArmyUnline\\Army Unline.csproj",
+      "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
+      "outputPath": "F:\\Godot_v4.2-stable_mono_win64\\program\\ArmyUnline\\.godot\\mono\\temp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Hoshi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -160,7 +159,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

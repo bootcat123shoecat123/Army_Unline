@@ -1,2 +1,11 @@
-Node
+Control
+TextureRect
+AnimationPlayer
+AnimatedSprite2D
+AudioStreamPlayer
+Sprite2D
 RichTextLabel
+Node2D
+Node
+Panel
+Container
