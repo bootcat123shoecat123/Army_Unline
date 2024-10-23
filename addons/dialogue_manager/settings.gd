@@ -20,7 +20,9 @@ const DEFAULT_SETTINGS = {
 	balloon_path = "",
 	create_lines_for_responses_with_characters = true,
 	include_character_in_translation_exports = false,
-	include_notes_in_translation_exports = false
+	include_notes_in_translation_exports = false,
+	uses_dotnet = false,
+	try_suppressing_startup_unsaved_indicator = false
 }
 
 
@@ -53,6 +55,11 @@ static func prepare() -> void:
 				"hint": PROPERTY_HINT_FILE,
 			})
 
+	# Some settings shouldn't be edited directly in the Project Settings window
+	ProjectSettings.set_as_internal("dialogue_manager/general/states", true)
+	ProjectSettings.set_as_internal("dialogue_manager/general/custom_test_scene_path", true)
+	ProjectSettings.set_as_internal("dialogue_manager/general/uses_dotnet", true)
+
 	ProjectSettings.save()
 
 
@@ -82,8 +89,11 @@ static func get_settings(only_keys: PackedStringArray = []) -> Dictionary:
 
 static func get_user_config() -> Dictionary:
 	var user_config: Dictionary = {
+		check_for_updates = true,
 		just_refreshed = null,
 		recent_files = [],
+		reopen_files = [],
+		most_recent_reopen_file = "",
 		carets = {},
 		run_title = "",
 		run_resource_path = "",
@@ -162,3 +172,16 @@ static func get_caret(path: String) -> Vector2:
 		return Vector2(caret.x, caret.y)
 	else:
 		return Vector2.ZERO
+
+
+static func check_for_dotnet_solution() -> bool:
+	if Engine.is_editor_hint():
+		var has_dotnet_solution: bool = false
+		if ProjectSettings.has_setting("dotnet/project/solution_directory"):
+			var directory: String = ProjectSettings.get("dotnet/project/solution_directory")
+			var file_name: String = ProjectSettings.get("dotnet/project/assembly_name")
+			has_dotnet_solution = FileAccess.file_exists("res://%s/%s.sln" % [directory, file_name])
+		set_setting("uses_dotnet", has_dotnet_solution)
+		return has_dotnet_solution
+
+	return get_setting("uses_dotnet", false)

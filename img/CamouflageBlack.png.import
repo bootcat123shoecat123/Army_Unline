@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://3d0kdyhuxf4o"
-path="res://.godot/imported/CamouflageBlack.png-b7d2b0b215d7a826fa96252ebf4cdbc6.ctex"
+path="res://.godot/imported/CamouflageBlack.png-a47947b641423d69cd61f995ccf23925.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Img/CamouflageBlack.png"
-dest_files=["res://.godot/imported/CamouflageBlack.png-b7d2b0b215d7a826fa96252ebf4cdbc6.ctex"]
+source_file="res://img/CamouflageBlack.png"
+dest_files=["res://.godot/imported/CamouflageBlack.png-a47947b641423d69cd61f995ccf23925.ctex"]
 
 [params]
 

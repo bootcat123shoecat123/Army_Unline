@@ -1,6 +1,6 @@
 ﻿Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Army Unline", "Army Unline.csproj", "{1263CA1D-E933-4383-A73E-4626C3F4FF87}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Army Unline", "Army Unline.csproj", "{C5374352-EDA6-4ACD-B8BA-C3AFB52179C6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,11 +9,11 @@ Global
 	ExportRelease|Any CPU = ExportRelease|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{1263CA1D-E933-4383-A73E-4626C3F4FF87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1263CA1D-E933-4383-A73E-4626C3F4FF87}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1263CA1D-E933-4383-A73E-4626C3F4FF87}.ExportDebug|Any CPU.ActiveCfg = ExportDebug|Any CPU
-		{1263CA1D-E933-4383-A73E-4626C3F4FF87}.ExportDebug|Any CPU.Build.0 = ExportDebug|Any CPU
-		{1263CA1D-E933-4383-A73E-4626C3F4FF87}.ExportRelease|Any CPU.ActiveCfg = ExportRelease|Any CPU
-		{1263CA1D-E933-4383-A73E-4626C3F4FF87}.ExportRelease|Any CPU.Build.0 = ExportRelease|Any CPU
+		{C5374352-EDA6-4ACD-B8BA-C3AFB52179C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5374352-EDA6-4ACD-B8BA-C3AFB52179C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5374352-EDA6-4ACD-B8BA-C3AFB52179C6}.ExportDebug|Any CPU.ActiveCfg = ExportDebug|Any CPU
+		{C5374352-EDA6-4ACD-B8BA-C3AFB52179C6}.ExportDebug|Any CPU.Build.0 = ExportDebug|Any CPU
+		{C5374352-EDA6-4ACD-B8BA-C3AFB52179C6}.ExportRelease|Any CPU.ActiveCfg = ExportRelease|Any CPU
+		{C5374352-EDA6-4ACD-B8BA-C3AFB52179C6}.ExportRelease|Any CPU.Build.0 = ExportRelease|Any CPU
 	EndGlobalSection
 EndGlobal

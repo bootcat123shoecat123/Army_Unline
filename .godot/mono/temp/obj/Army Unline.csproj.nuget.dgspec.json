@@ -1,30 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Godot_v4.2-stable_mono_win64\\program\\ArmyUnline\\Army Unline.csproj": {}
+    "D:\\GODOT\\ARMY_UNLINE\\Army Unline.csproj": {}
   },
   "projects": {
-    "F:\\Godot_v4.2-stable_mono_win64\\program\\ArmyUnline\\Army Unline.csproj": {
+    "D:\\GODOT\\ARMY_UNLINE\\Army Unline.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Godot_v4.2-stable_mono_win64\\program\\ArmyUnline\\Army Unline.csproj",
+        "projectUniqueName": "D:\\GODOT\\ARMY_UNLINE\\Army Unline.csproj",
         "projectName": "Army Unline",
-        "projectPath": "F:\\Godot_v4.2-stable_mono_win64\\program\\ArmyUnline\\Army Unline.csproj",
-        "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-        "outputPath": "F:\\Godot_v4.2-stable_mono_win64\\program\\ArmyUnline\\.godot\\mono\\temp\\obj\\",
+        "projectPath": "D:\\GODOT\\ARMY_UNLINE\\Army Unline.csproj",
+        "packagesPath": "C:\\Users\\oooth\\.nuget\\packages\\",
+        "outputPath": "D:\\GODOT\\ARMY_UNLINE\\.godot\\mono\\temp\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\oooth\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -37,6 +32,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -45,15 +45,15 @@
           "dependencies": {
             "Godot.SourceGenerators": {
               "target": "Package",
-              "version": "[4.2.0, )"
+              "version": "[4.2.2, )"
             },
             "GodotSharp": {
               "target": "Package",
-              "version": "[4.2.0, )"
+              "version": "[4.2.2, )"
             },
             "GodotSharpEditor": {
               "target": "Package",
-              "version": "[4.2.0, )"
+              "version": "[4.2.2, )"
             }
           },
           "imports": [
@@ -67,12 +67,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.33, 6.0.33]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.33, 6.0.33]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.33, 6.0.33]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

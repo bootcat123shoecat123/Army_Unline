@@ -1,12 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "SGhaiwvfsFU7rm3l4sqbBIkK/SwKRgrtDuJI2LaNeW8W06EvsDQBzKmFniHMUZypubzeIrE8Z7ekxUiuhhlFCA==",
+  "dgSpecHash": "IGEUuXsLmkk=",
   "success": true,
-  "projectFilePath": "F:\\Godot_v4.2-stable_mono_win64\\program\\ArmyUnline\\Army Unline.csproj",
+  "projectFilePath": "D:\\GODOT\\ARMY_UNLINE\\Army Unline.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\USER\\.nuget\\packages\\godot.sourcegenerators\\4.2.0\\godot.sourcegenerators.4.2.0.nupkg.sha512",
-    "C:\\Users\\USER\\.nuget\\packages\\godotsharp\\4.2.0\\godotsharp.4.2.0.nupkg.sha512",
-    "C:\\Users\\USER\\.nuget\\packages\\godotsharpeditor\\4.2.0\\godotsharpeditor.4.2.0.nupkg.sha512"
+    "C:\\Users\\oooth\\.nuget\\packages\\godot.sourcegenerators\\4.2.2\\godot.sourcegenerators.4.2.2.nupkg.sha512",
+    "C:\\Users\\oooth\\.nuget\\packages\\godotsharp\\4.2.2\\godotsharp.4.2.2.nupkg.sha512",
+    "C:\\Users\\oooth\\.nuget\\packages\\godotsharpeditor\\4.2.2\\godotsharpeditor.4.2.2.nupkg.sha512",
+    "C:\\Users\\oooth\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.33\\microsoft.windowsdesktop.app.ref.6.0.33.nupkg.sha512",
+    "C:\\Users\\oooth\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.33\\microsoft.netcore.app.ref.6.0.33.nupkg.sha512",
+    "C:\\Users\\oooth\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.33\\microsoft.aspnetcore.app.ref.6.0.33.nupkg.sha512"
   ],
   "logs": []
 }

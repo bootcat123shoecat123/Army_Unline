@@ -1,11 +1,11 @@
 [gd_scene load_steps=13 format=3 uid="uid://bxppp3ws8fcta"]
 
-[ext_resource type="FontFile" uid="uid://b5dvcg7di0ptt" path="res://Font/OSWALD-BOLD.TTF" id="1_n17ff"]
-[ext_resource type="Texture2D" uid="uid://c7or05s2l7tgf" path="res://Img/Title.png" id="1_yr4ux"]
+[ext_resource type="FontFile" uid="uid://b5dvcg7di0ptt" path="res://font/OSWALD-BOLD.TTF" id="1_n17ff"]
+[ext_resource type="Texture2D" uid="uid://c7or05s2l7tgf" path="res://img/Title.png" id="1_yr4ux"]
 [ext_resource type="StyleBox" uid="uid://bp2rj1kmwln32" path="res://TitleButton.tres" id="2_v7871"]
-[ext_resource type="Texture2D" uid="uid://3d0kdyhuxf4o" path="res://Img/CamouflageBlack.png" id="4_c55c0"]
+[ext_resource type="Texture2D" uid="uid://3d0kdyhuxf4o" path="res://img/CamouflageBlack.png" id="4_c55c0"]
 [ext_resource type="Script" path="res://Script/TitleSceneControll.gd" id="4_cd4ci"]
-[ext_resource type="AudioStream" uid="uid://dpall7yj38viq" path="res://Sound/BGM/たき火のそばで夜明けを待つ.mp3" id="6_ejq5o"]
+[ext_resource type="PackedScene" uid="uid://db2k3j85nk8n4" path="res://prefab/audioSystem.tscn" id="6_s2mnh"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_pawb0"]
 texture = ExtResource("4_c55c0")
@@ -13,33 +13,6 @@ axis_stretch_horizontal = 2
 axis_stretch_vertical = 2
 region_rect = Rect2(0, 0, 1920.24, 900)
 modulate_color = Color(0.282353, 0.482353, 0.305882, 1)
-
-[sub_resource type="Animation" id="Animation_3m3sf"]
-resource_name = "fade_out"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("AnimationPlayer/TextureRect:modulate")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0.1, 1),
-"transitions": PackedFloat32Array(3, 1),
-"update": 0,
-"values": [Color(0, 0, 0, 1), Color(0, 0, 0, 0)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("AnimationPlayer/TextureRect:visible")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0.1, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 1,
-"values": [true, false]
-}
 
 [sub_resource type="Animation" id="Animation_kfefp"]
 resource_name = "fade_in"
@@ -66,6 +39,33 @@ tracks/1/keys = {
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
 "values": [false, true]
+}
+
+[sub_resource type="Animation" id="Animation_3m3sf"]
+resource_name = "fade_out"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimationPlayer/TextureRect:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.1, 1),
+"transitions": PackedFloat32Array(3, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 1), Color(0, 0, 0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimationPlayer/TextureRect:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.1, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_a2e2o"]
@@ -110,7 +110,7 @@ theme_override_font_sizes/font_size = 45
 theme_override_styles/normal = ExtResource("2_v7871")
 theme_override_styles/hover = ExtResource("2_v7871")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_pawb0")
-text = "Start"
+text = "從頭入伍"
 icon_alignment = 1
 expand_icon = true
 script = ExtResource("4_cd4ci")
@@ -135,8 +135,7 @@ theme_override_font_sizes/font_size = 45
 theme_override_styles/normal = ExtResource("2_v7871")
 theme_override_styles/hover = ExtResource("2_v7871")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_pawb0")
-text = "Load
-"
+text = "繼續服役"
 icon_alignment = 1
 expand_icon = true
 script = ExtResource("4_cd4ci")
@@ -161,7 +160,7 @@ theme_override_font_sizes/font_size = 45
 theme_override_styles/normal = ExtResource("2_v7871")
 theme_override_styles/hover = ExtResource("2_v7871")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_pawb0")
-text = "Controll"
+text = "系統調整"
 icon_alignment = 1
 expand_icon = true
 script = ExtResource("4_cd4ci")
@@ -186,14 +185,10 @@ theme_override_font_sizes/font_size = 45
 theme_override_styles/normal = ExtResource("2_v7871")
 theme_override_styles/hover = ExtResource("2_v7871")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_pawb0")
-text = "End"
+text = "休假一下"
 icon_alignment = 1
 expand_icon = true
 script = ExtResource("4_cd4ci")
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Node"]
-stream = ExtResource("6_ejq5o")
-autoplay = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
@@ -210,6 +205,9 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = SubResource("GradientTexture1D_186t6")
 
+[node name="AudioStreamPlayer" parent="." instance=ExtResource("6_s2mnh")]
+
 [connection signal="pressed" from="Node/Start" to="Node/Controll" method="_start_game"]
 [connection signal="pressed" from="Node/Controll" to="Node/Start" method="_setting"]
 [connection signal="pressed" from="Node/End" to="Node/Controll" method="_end_game"]
+[connection signal="animation_finished" from="AnimationPlayer" to="Node/Start" method="_on_animation_player_animation_finished"]

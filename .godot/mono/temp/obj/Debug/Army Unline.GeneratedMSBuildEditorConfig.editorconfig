@@ -1,6 +1,6 @@
 is_global = true
 build_property.GodotDisabledSourceGenerators = 
-build_property.GodotProjectDir = F:\Godot_v4.2-stable_mono_win64\program\ArmyUnline\
+build_property.GodotProjectDir = D:\GODOT\ARMY_UNLINE\
 build_property.GodotProjectDirBase64 = 
 build_property.GodotSourceGenerators = 
 build_property.IsGodotToolsProject = 
@@ -13,4 +13,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ArmyUnline
-build_property.ProjectDir = F:\Godot_v4.2-stable_mono_win64\program\ArmyUnline\
+build_property.ProjectDir = D:\GODOT\ARMY_UNLINE\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

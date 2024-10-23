@@ -32,3 +32,21 @@ F:\Godot_v4.2-stable_mono_win64\program\ArmyUnline\.godot\mono\temp\obj\Debug\re
 F:\Godot_v4.2-stable_mono_win64\program\ArmyUnline\.godot\mono\temp\obj\Debug\Army Unline.pdb
 F:\Godot_v4.2-stable_mono_win64\program\ArmyUnline\.godot\mono\temp\obj\Debug\Army Unline.genruntimeconfig.cache
 F:\Godot_v4.2-stable_mono_win64\program\ArmyUnline\.godot\mono\temp\obj\Debug\ref\Army Unline.dll
+D:\Godot\Army_Unline\.godot\mono\temp\bin\Debug\Army Unline.deps.json
+D:\Godot\Army_Unline\.godot\mono\temp\bin\Debug\Army Unline.runtimeconfig.json
+D:\Godot\Army_Unline\.godot\mono\temp\bin\Debug\Army Unline.dll
+D:\Godot\Army_Unline\.godot\mono\temp\bin\Debug\Army Unline.pdb
+D:\Godot\Army_Unline\.godot\mono\temp\bin\Debug\GodotSharp.dll
+D:\Godot\Army_Unline\.godot\mono\temp\bin\Debug\GodotSharpEditor.dll
+D:\Godot\Army_Unline\.godot\mono\temp\obj\Debug\Army Unline.csproj.AssemblyReference.cache
+D:\Godot\Army_Unline\.godot\mono\temp\obj\Debug\Army Unline.GeneratedMSBuildEditorConfig.editorconfig
+D:\Godot\Army_Unline\.godot\mono\temp\obj\Debug\Army Unline.AssemblyInfoInputs.cache
+D:\Godot\Army_Unline\.godot\mono\temp\obj\Debug\Army Unline.AssemblyInfo.cs
+D:\Godot\Army_Unline\.godot\mono\temp\obj\Debug\Army Unline.csproj.CoreCompileInputs.cache
+D:\Godot\Army_Unline\.godot\mono\temp\obj\Debug\Army Unline.sourcelink.json
+D:\Godot\Army_Unline\.godot\mono\temp\obj\Debug\Army Unl.9EDA4E6B.Up2Date
+D:\Godot\Army_Unline\.godot\mono\temp\obj\Debug\Army Unline.dll
+D:\Godot\Army_Unline\.godot\mono\temp\obj\Debug\refint\Army Unline.dll
+D:\Godot\Army_Unline\.godot\mono\temp\obj\Debug\Army Unline.pdb
+D:\Godot\Army_Unline\.godot\mono\temp\obj\Debug\Army Unline.genruntimeconfig.cache
+D:\Godot\Army_Unline\.godot\mono\temp\obj\Debug\ref\Army Unline.dll

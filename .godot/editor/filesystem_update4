@@ -1,7 +1,3 @@
 res://default_env.tres
-res://Scenes/Intro.tscn
+res://UI/Talk_balloon/Balloon.tscn
 res://TitleButton.tres
-res://Script/TitleSceneControll.gd
-res://addons/dialogue_manager/test_scene.tscn
-res://UI/Talk_balloon/Talk_balloon.tscn
-res://addons/dialogue_manager/dialogue_label.tscn

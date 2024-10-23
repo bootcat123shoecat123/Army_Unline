@@ -19,6 +19,11 @@ config/icon="res://Img/icon.png"
 
 DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
 
+[dialogue_manager]
+
+general/balloon_path="res://UI/Talk_balloon/Balloon.tscn"
+general/uses_dotnet=true
+
 [display]
 
 window/size/viewport_width=1920
@@ -40,7 +45,7 @@ common/drop_mouse_on_gui_input_disabled=true
 
 [internationalization]
 
-locale/translations_pot_files=PackedStringArray("res://Dialogue/Sence001-Intro.dialogue")
+locale/translations_pot_files=PackedStringArray("res://Dialogue/StaticPlot/Intro001.dialogue")
 
 [physics]
 
