@@ -6,4 +6,10 @@
     <EnableDynamicLoading>true</EnableDynamicLoading>
     <RootNamespace>ArmyUnline</RootNamespace>
   </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="GodotOnReady" Version="1.2.4" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Scripts\Record\" />
+  </ItemGroup>
 </Project>

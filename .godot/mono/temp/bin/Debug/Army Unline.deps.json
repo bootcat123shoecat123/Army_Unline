@@ -9,6 +9,7 @@
       "Army Unline/1.0.0": {
         "dependencies": {
           "Godot.SourceGenerators": "4.2.2",
+          "GodotOnReady": "1.2.4",
           "GodotSharp": "4.2.2",
           "GodotSharpEditor": "4.2.2"
         },
@@ -17,6 +18,21 @@
         }
       },
       "Godot.SourceGenerators/4.2.2": {},
+      "GodotOnReady/1.2.4": {
+        "dependencies": {
+          "GodotOnReady.Attributes": "1.2.4",
+          "GodotOnReady.Generator": "1.2.4"
+        }
+      },
+      "GodotOnReady.Attributes/1.2.4": {
+        "runtime": {
+          "lib/netstandard2.0/GodotOnReady.Attributes.dll": {
+            "assemblyVersion": "1.2.4.0",
+            "fileVersion": "1.2.4.0"
+          }
+        }
+      },
+      "GodotOnReady.Generator/1.2.4": {},
       "GodotSharp/4.2.2": {
         "runtime": {
           "lib/net6.0/GodotSharp.dll": {
@@ -50,6 +66,27 @@
       "sha512": "sha512-QGO7NjcG4W1doQTOXBp2TgAK+a6npFX2dYCw1CXttRh3/UI76sQnCUUe9/U95e6uMO9SzVK7wzEH3H4qGpOr4g==",
       "path": "godot.sourcegenerators/4.2.2",
       "hashPath": "godot.sourcegenerators.4.2.2.nupkg.sha512"
+    },
+    "GodotOnReady/1.2.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-89CUoTiJ/avkaQm7JOl9woA0OYljSKBImHl9JJFTUgJ2Raeg6Bt/VGO9kiOPNugX1tNaie4rk98KTk5bkdJxuw==",
+      "path": "godotonready/1.2.4",
+      "hashPath": "godotonready.1.2.4.nupkg.sha512"
+    },
+    "GodotOnReady.Attributes/1.2.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-E8sBJAsvev25naqzTqWIvw0epsoD4KaclkKBwvVo7CaUbOy5bKDJPXZUyCVtYqQxdzVBIsOCBgN9Qls60SqR0Q==",
+      "path": "godotonready.attributes/1.2.4",
+      "hashPath": "godotonready.attributes.1.2.4.nupkg.sha512"
+    },
+    "GodotOnReady.Generator/1.2.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Uch/hg3WvTmfPu0tD0813BUH0+rHbl1SrCikgfN6YFubPrsx4/7VHfa+bKAkRyRYKIV/CVRzKntHNjgs8vqmxw==",
+      "path": "godotonready.generator/1.2.4",
+      "hashPath": "godotonready.generator.1.2.4.nupkg.sha512"
     },
     "GodotSharp/4.2.2": {
       "type": "package",

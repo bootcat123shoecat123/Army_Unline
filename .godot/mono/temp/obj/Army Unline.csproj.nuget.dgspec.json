@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\GODOT\\ARMY_UNLINE\\Army Unline.csproj": {}
+    "D:\\Godot\\Army_Unline\\Army Unline.csproj": {}
   },
   "projects": {
-    "D:\\GODOT\\ARMY_UNLINE\\Army Unline.csproj": {
+    "D:\\Godot\\Army_Unline\\Army Unline.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GODOT\\ARMY_UNLINE\\Army Unline.csproj",
+        "projectUniqueName": "D:\\Godot\\Army_Unline\\Army Unline.csproj",
         "projectName": "Army Unline",
-        "projectPath": "D:\\GODOT\\ARMY_UNLINE\\Army Unline.csproj",
+        "projectPath": "D:\\Godot\\Army_Unline\\Army Unline.csproj",
         "packagesPath": "C:\\Users\\oooth\\.nuget\\packages\\",
-        "outputPath": "D:\\GODOT\\ARMY_UNLINE\\.godot\\mono\\temp\\obj\\",
+        "outputPath": "D:\\Godot\\Army_Unline\\.godot\\mono\\temp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\oooth\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -47,6 +47,10 @@
               "target": "Package",
               "version": "[4.2.2, )"
             },
+            "GodotOnReady": {
+              "target": "Package",
+              "version": "[1.2.4, )"
+            },
             "GodotSharp": {
               "target": "Package",
               "version": "[4.2.2, )"
@@ -67,20 +71,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.33, 6.0.33]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.33, 6.0.33]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.33, 6.0.33]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"

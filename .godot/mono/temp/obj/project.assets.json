@@ -8,6 +8,25 @@
           "build/Godot.SourceGenerators.props": {}
         }
       },
+      "GodotOnReady/1.2.4": {
+        "type": "package",
+        "dependencies": {
+          "GodotOnReady.Attributes": "1.2.4",
+          "GodotOnReady.Generator": "1.2.4"
+        }
+      },
+      "GodotOnReady.Attributes/1.2.4": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/GodotOnReady.Attributes.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/GodotOnReady.Attributes.dll": {}
+        }
+      },
+      "GodotOnReady.Generator/1.2.4": {
+        "type": "package"
+      },
       "GodotSharp/4.2.2": {
         "type": "package",
         "compile": {
@@ -53,6 +72,41 @@
         "godot.sourcegenerators.nuspec"
       ]
     },
+    "GodotOnReady/1.2.4": {
+      "sha512": "89CUoTiJ/avkaQm7JOl9woA0OYljSKBImHl9JJFTUgJ2Raeg6Bt/VGO9kiOPNugX1tNaie4rk98KTk5bkdJxuw==",
+      "type": "package",
+      "path": "godotonready/1.2.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "godotonready.1.2.4.nupkg.sha512",
+        "godotonready.nuspec"
+      ]
+    },
+    "GodotOnReady.Attributes/1.2.4": {
+      "sha512": "E8sBJAsvev25naqzTqWIvw0epsoD4KaclkKBwvVo7CaUbOy5bKDJPXZUyCVtYqQxdzVBIsOCBgN9Qls60SqR0Q==",
+      "type": "package",
+      "path": "godotonready.attributes/1.2.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "godotonready.attributes.1.2.4.nupkg.sha512",
+        "godotonready.attributes.nuspec",
+        "lib/netstandard2.0/GodotOnReady.Attributes.dll"
+      ]
+    },
+    "GodotOnReady.Generator/1.2.4": {
+      "sha512": "Uch/hg3WvTmfPu0tD0813BUH0+rHbl1SrCikgfN6YFubPrsx4/7VHfa+bKAkRyRYKIV/CVRzKntHNjgs8vqmxw==",
+      "type": "package",
+      "path": "godotonready.generator/1.2.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "analyzers/dotnet/cs/GodotOnReady.Generator.dll",
+        "godotonready.generator.1.2.4.nupkg.sha512",
+        "godotonready.generator.nuspec"
+      ]
+    },
     "GodotSharp/4.2.2": {
       "sha512": "J2ZXDTuS4LlbPIOK2HCBD9lKNFvBzJLv6LIyFC3fAUKgUXZHvoKP/uwS+Iv/CrMZqsa+lQ+Wb4zfp5xoBrSCcw==",
       "type": "package",
@@ -83,6 +137,7 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "Godot.SourceGenerators >= 4.2.2",
+      "GodotOnReady >= 1.2.4",
       "GodotSharp >= 4.2.2",
       "GodotSharpEditor >= 4.2.2"
     ]
@@ -93,11 +148,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Godot\\Army_Unline\\Army Unline.csproj",
+      "projectUniqueName": "D:\\GODOT\\ARMY_UNLINE\\Army Unline.csproj",
       "projectName": "Army Unline",
-      "projectPath": "D:\\Godot\\Army_Unline\\Army Unline.csproj",
+      "projectPath": "D:\\GODOT\\ARMY_UNLINE\\Army Unline.csproj",
       "packagesPath": "C:\\Users\\oooth\\.nuget\\packages\\",
-      "outputPath": "D:\\Godot\\Army_Unline\\.godot\\mono\\temp\\obj\\",
+      "outputPath": "D:\\GODOT\\ARMY_UNLINE\\.godot\\mono\\temp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\oooth\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -133,6 +188,10 @@
             "target": "Package",
             "version": "[4.2.2, )"
           },
+          "GodotOnReady": {
+            "target": "Package",
+            "version": "[1.2.4, )"
+          },
           "GodotSharp": {
             "target": "Package",
             "version": "[4.2.2, )"
@@ -153,20 +212,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[6.0.33, 6.0.33]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[6.0.33, 6.0.33]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[6.0.33, 6.0.33]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"

@@ -1,0 +1,19 @@
+[gd_resource type="StyleBoxTexture" load_steps=3 format=3 uid="uid://bp2rj1kmwln32"]
+
+[sub_resource type="Gradient" id="Gradient_15gmw"]
+offsets = PackedFloat32Array(0, 0.311419, 0.66436, 1)
+colors = PackedColorArray(0, 0, 0, 0, 0.916667, 0.916667, 0.916667, 0.916667, 1, 1, 1, 1, 0, 0, 0, 0)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_fhm20"]
+gradient = SubResource("Gradient_15gmw")
+width = 1856
+
+[resource]
+texture = SubResource("GradientTexture1D_fhm20")
+texture_margin_top = 10.0
+texture_margin_bottom = 10.0
+axis_stretch_horizontal = 2
+axis_stretch_vertical = 2
+region_rect = Rect2(0, 0, 1920.24, 900)
+modulate_color = Color(1, 0.810652, 0.582343, 1)
+draw_center = false

@@ -50,3 +50,4 @@ D:\Godot\Army_Unline\.godot\mono\temp\obj\Debug\refint\Army Unline.dll
 D:\Godot\Army_Unline\.godot\mono\temp\obj\Debug\Army Unline.pdb
 D:\Godot\Army_Unline\.godot\mono\temp\obj\Debug\Army Unline.genruntimeconfig.cache
 D:\Godot\Army_Unline\.godot\mono\temp\obj\Debug\ref\Army Unline.dll
+D:\Godot\Army_Unline\.godot\mono\temp\bin\Debug\GodotOnReady.Attributes.dll

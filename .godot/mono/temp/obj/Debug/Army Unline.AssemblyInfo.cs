@@ -13,10 +13,10 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Army Unline")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ab4a875dea3086bc607c29a5f5855af87abe2eda")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+516159cb94dc81f1508209aeddda54ce8bb05968")]
 [assembly: System.Reflection.AssemblyProductAttribute("Army Unline")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Army Unline")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
-// 由 MSBuild WriteCodeFragment 類別產生。
+// MSBuild WriteCodeFragment クラスによって生成されました。
 

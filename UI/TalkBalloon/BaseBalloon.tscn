@@ -1,0 +1,342 @@
+[gd_scene load_steps=26 format=3 uid="uid://73jm5qjy52vq"]
+
+[ext_resource type="Script" path="res://UI/TalkBalloon/DialogueBalloon.cs" id="1_8rai8"]
+[ext_resource type="PackedScene" uid="uid://ckvgyvclnwggo" path="res://addons/dialogue_manager/dialogue_label.tscn" id="2_u4u3x"]
+[ext_resource type="Texture2D" uid="uid://c824dp1s54pry" path="res://Images/SenceBG/black.png" id="2_xuppu"]
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_reponses_menu.gd" id="3_4bbse"]
+[ext_resource type="Texture2D" uid="uid://c6qysjuuqyavc" path="res://Images/Texture/TalkUI.png" id="4_knvaw"]
+[ext_resource type="Texture2D" uid="uid://6sc8xlflxutf" path="res://Images/defaultCharater.png" id="5_87c6r"]
+[ext_resource type="Texture2D" uid="uid://dqikettwsagnn" path="res://Images/TestCharacterPic.png" id="6_irk23"]
+[ext_resource type="StyleBox" uid="uid://dr4u545pwjb2l" path="res://UI/Design/ResponeButtonDesign.tres" id="6_n01cs"]
+[ext_resource type="Texture2D" uid="uid://bp60m8xlxm2k5" path="res://Images/Texture/NameTitle.png" id="6_numpq"]
+[ext_resource type="FontFile" uid="uid://b5dvcg7di0ptt" path="res://font/OSWALD-BOLD.TTF" id="7_ag0jh"]
+[ext_resource type="Texture2D" uid="uid://dcgk0yadolqeg" path="res://Images/Texture/military.png" id="7_vm514"]
+[ext_resource type="StyleBox" uid="uid://cfonaadv7m41w" path="res://UI/Design/EmptyStyle.tres" id="10_bhoqf"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_spyqn"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.329412, 0.329412, 0.329412, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ri4m3"]
+bg_color = Color(0.121569, 0.121569, 0.121569, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e0njw"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.6, 0.6, 0.6, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uy0d5"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="Theme" id="Theme_qq3yp"]
+default_font_size = 20
+Button/styles/disabled = SubResource("StyleBoxFlat_spyqn")
+Button/styles/focus = SubResource("StyleBoxFlat_ri4m3")
+Button/styles/hover = SubResource("StyleBoxFlat_e0njw")
+Button/styles/normal = SubResource("StyleBoxFlat_e0njw")
+MarginContainer/constants/margin_bottom = 15
+MarginContainer/constants/margin_left = 30
+MarginContainer/constants/margin_right = 30
+MarginContainer/constants/margin_top = 15
+Panel/styles/panel = SubResource("StyleBoxFlat_uy0d5")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qjwbl"]
+
+[sub_resource type="Theme" id="Theme_1b5us"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ksahb"]
+texture = ExtResource("6_numpq")
+expand_margin_left = 10.0
+expand_margin_top = 10.0
+expand_margin_right = 10.0
+expand_margin_bottom = 10.0
+modulate_color = Color(0.738467, 0.853698, 0.757203, 1)
+
+[sub_resource type="Gradient" id="Gradient_xhb6t"]
+offsets = PackedFloat32Array(0, 0.512111, 1)
+colors = PackedColorArray(0.960784, 0.960784, 0.960784, 0.588235, 0.980656, 0.980656, 0.980656, 1, 1, 1, 1, 0.588235)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_1g0ro"]
+gradient = SubResource("Gradient_xhb6t")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_uvxp8"]
+content_margin_top = 15.0
+content_margin_bottom = 30.0
+texture = SubResource("GradientTexture1D_1g0ro")
+texture_margin_bottom = 116.0
+modulate_color = Color(0.408286, 0.600598, 0.433745, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5s7dw"]
+content_margin_top = 15.0
+content_margin_bottom = 30.0
+texture = SubResource("GradientTexture1D_1g0ro")
+texture_margin_bottom = 116.0
+modulate_color = Color(0.326145, 0.495246, 0.349101, 1)
+
+[sub_resource type="Theme" id="Theme_sgiw7"]
+
+[node name="ExampleBalloon" type="CanvasLayer"]
+layer = 100
+script = ExtResource("1_8rai8")
+
+[node name="BG" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="BackGraphic" type="Sprite2D" parent="BG"]
+unique_name_in_owner = true
+texture = ExtResource("2_xuppu")
+centered = false
+
+[node name="Character" type="Control" parent="."]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CharaterPic" type="Sprite2D" parent="Character"]
+unique_name_in_owner = true
+position = Vector2(925, 934)
+texture = ExtResource("5_87c6r")
+
+[node name="Balloon" type="Control" parent="."]
+unique_name_in_owner = true
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_qq3yp")
+
+[node name="Panel" type="Panel" parent="Balloon"]
+clip_children = 2
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.73
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+theme_override_styles/panel = SubResource("StyleBoxTexture_qjwbl")
+
+[node name="NinePatchRect" type="NinePatchRect" parent="Balloon/Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -5.0
+offset_bottom = -0.00012207
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_knvaw")
+
+[node name="Dialogue" type="MarginContainer" parent="Balloon/Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.2
+anchor_top = 0.19
+anchor_right = 0.9
+anchor_bottom = 1.0
+offset_top = 28.596
+offset_right = -6.0
+offset_bottom = 0.400024
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Balloon/Panel/Dialogue"]
+layout_mode = 2
+
+[node name="DialogueLabel" parent="Balloon/Panel/Dialogue/VBoxContainer" instance=ExtResource("2_u4u3x")]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+theme = SubResource("Theme_1b5us")
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.337255, 0.333333, 0, 0.701961)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/shadow_outline_size = 3
+theme_override_constants/outline_size = 5
+theme_override_fonts/normal_font = ExtResource("7_ag0jh")
+theme_override_font_sizes/normal_font_size = 30
+text = "本当に大丈夫?"
+
+[node name="CharacterNamePanel" type="Panel" parent="Balloon"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.2
+anchor_top = 0.7
+anchor_right = 0.4
+anchor_bottom = 0.74
+offset_left = -7.76001
+offset_top = 9.83997
+offset_right = -18.16
+offset_bottom = 42.72
+grow_horizontal = 2
+grow_vertical = 2
+rotation = -0.143117
+theme_override_styles/panel = SubResource("StyleBoxTexture_ksahb")
+
+[node name="NinePatchRect" type="NinePatchRect" parent="Balloon/CharacterNamePanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -2.0
+offset_right = -0.120026
+offset_bottom = -0.679993
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Balloon/CharacterNamePanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CharacterLabel" type="RichTextLabel" parent="Balloon/CharacterNamePanel/MarginContainer"]
+unique_name_in_owner = true
+modulate = Color(1, 1, 1, 0.984314)
+layout_mode = 2
+mouse_filter = 1
+theme_override_colors/default_color = Color(0.321128, 0.482073, 0.335042, 1)
+theme_override_colors/font_shadow_color = Color(0.554719, 0.55468, 0.185395, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/shadow_outline_size = 14
+theme_override_constants/outline_size = 7
+theme_override_fonts/normal_font = ExtResource("7_ag0jh")
+theme_override_font_sizes/normal_font_size = 50
+bbcode_enabled = true
+text = "椎葉白"
+fit_content = true
+scroll_active = false
+tab_size = 10
+
+[node name="Responses" type="MarginContainer" parent="Balloon"]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -66.0
+offset_bottom = 87.53
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ResponsesMenu" type="VBoxContainer" parent="Balloon/Responses" node_paths=PackedStringArray("response_template")]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 4
+size_flags_stretch_ratio = 9.82
+theme_override_constants/separation = 0
+script = ExtResource("3_4bbse")
+response_template = NodePath("ResponseExample")
+
+[node name="ResponseExample" type="Button" parent="Balloon/Responses/ResponsesMenu"]
+z_index = 1
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = ExtResource("6_n01cs")
+theme_override_styles/hover = SubResource("StyleBoxTexture_uvxp8")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_5s7dw")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_5s7dw")
+theme_override_styles/focus = ExtResource("10_bhoqf")
+text = "平気です。"
+language = "ja"
+
+[node name="NinePatchRect" type="NinePatchRect" parent="Balloon/Responses/ResponsesMenu/ResponseExample"]
+z_as_relative = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("7_vm514")
+axis_stretch_horizontal = 2
+axis_stretch_vertical = 1
+
+[node name="Control" type="Control" parent="Balloon"]
+layout_mode = 1
+anchor_top = 0.659
+anchor_right = 0.207
+anchor_bottom = 1.0
+grow_vertical = 0
+
+[node name="CharaterHeadPic" type="Sprite2D" parent="Balloon/Control"]
+unique_name_in_owner = true
+position = Vector2(196, 187.76)
+texture = ExtResource("6_irk23")
+
+[node name="SystemPlane" type="Control" parent="."]
+layout_mode = 3
+anchor_left = 0.9
+anchor_top = 0.94
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="OptionButton" type="OptionButton" parent="SystemPlane"]
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -22.5
+offset_right = 22.5
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_sgiw7")
+
+[connection signal="gui_input" from="Balloon" to="." method="_on_balloon_gui_input"]
+[connection signal="response_selected" from="Balloon/Responses/ResponsesMenu" to="." method="_on_responses_menu_response_selected"]

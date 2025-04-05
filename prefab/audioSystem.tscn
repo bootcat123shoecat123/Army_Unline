@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://db2k3j85nk8n4"]
+
+[ext_resource type="Script" path="res://Scripts/ContollerSystem/AudioSystem.cs" id="1_ykjud"]
+
+[sub_resource type="AudioStreamMP3" id="AudioStreamMP3_ap0f5"]
+resource_local_to_scene = true
+resource_name = "夜と静寂(The_night_and_quiet).mp3"
+loop = true
+
+[node name="AudioStreamPlayer" type="Node"]
+script = ExtResource("1_ykjud")
+
+[node name="Node" type="AudioStreamPlayer2D" parent="."]
+stream = SubResource("AudioStreamMP3_ap0f5")
+volume_db = 5.0
+autoplay = true
