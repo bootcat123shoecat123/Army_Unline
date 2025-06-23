@@ -1,6 +1,9 @@
+using ArmyUnline.Scripts.Enums;
 using DialogueManagerRuntime;
 using Godot;
 using System;
+using System.ComponentModel;
+using System.Reflection;
 
 public partial class DialogueController : Node
 {
@@ -14,12 +17,20 @@ public partial class DialogueController : Node
 
     public override void _Ready()
     {
-        StartNormalDialogue(LevelController.gameFlag.dialogueFlag);
-
+        string path = LevelController.gameFlagState.gameFlag.GetType()
+            .GetField(LevelController.gameFlagState.gameFlag.ToString())
+            .GetCustomAttribute<DescriptionAttribute>()
+            .Description;
+        StartNormalDialogue(LevelController.gameFlagState.gameFlag);
     }
-    public void StartNormalDialogue(Resource dialogue,string key="")
+    public void StartNormalDialogue(GameFlagEnums gameFlag,string key="")
     {
-        DialogueManager.ShowDialogueBalloon(dialogue,key);
+        string path = gameFlag.GetType()
+            .GetField(gameFlag.ToString())
+            .GetCustomAttribute<DescriptionAttribute>()
+            .Description;
+
+        DialogueManager.ShowDialogueBalloon(GD.Load<Resource>(path),key);
     }
     public void StartPlayScene(){
     }

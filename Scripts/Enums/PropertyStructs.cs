@@ -14,18 +14,23 @@ namespace Scripts.Enums
         public AudioType type;    
     }
     
-    public struct GameFlag
+    public struct GameFlagState
     {
-        public Resource dialogueFlag;
+        public GameFlagEnums gameFlag;
+        
         public SceneTypes runSceneType;
         
     }
+    
     public struct TalkSceneState
     {
         public string characterName;
         public string dialogueID;
         public string background;
-        public string mood;
-        public string action;
+    }
+    public struct CharacterPlace
+    {
+        public StandPlace place;
+        public Vector2 standVector;
     }
 }

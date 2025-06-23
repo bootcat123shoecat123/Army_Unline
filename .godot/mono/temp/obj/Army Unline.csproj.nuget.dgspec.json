@@ -47,10 +47,6 @@
               "target": "Package",
               "version": "[4.2.2, )"
             },
-            "GodotOnReady": {
-              "target": "Package",
-              "version": "[1.2.4, )"
-            },
             "GodotSharp": {
               "target": "Package",
               "version": "[4.2.2, )"

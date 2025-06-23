@@ -47,7 +47,11 @@ project/assembly_name="Army Unline"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/dialogue_manager/plugin.cfg")
+enabled=PackedStringArray("res://addons/dialogue_manager/plugin.cfg", "res://addons/godot_resource_groups/plugin.cfg")
+
+[godot_resource_groups]
+
+auto_rebuild=true
 
 [gui]
 
@@ -67,7 +71,7 @@ dialogic_default_action={
 
 [internationalization]
 
-locale/translations_pot_files=PackedStringArray("res://Dialogue/StaticPlot/Intro001.dialogue", "res://ArmySide/ArmySideIntro.dialogue", "res://Dialogue/CharacterTalking/Siro01.dialogue")
+locale/translations_pot_files=PackedStringArray("res://ArmySide/ArmySideIntro.dialogue", "res://Dialogue/CharacterTalking/Siro01.dialogue")
 
 [physics]
 

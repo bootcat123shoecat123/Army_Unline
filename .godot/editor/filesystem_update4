@@ -2,16 +2,4 @@ res://default_env.tres
 res://UI/TalkBalloon/BaseBalloon.tscn
 res://addons/dialogue_manager/dialogue_label.gd
 res://UI/Design/ResponeButtonDesign.tres
-res://Scripts/label_container.gd
-res://Scenes/GameLevel/Intro.tscn
-res://Scenes/GameLevel/ScriptScene.tscn
-res://prefab/audioSystem.tscn
-res://addons/dialogue_manager/example_balloon/ExampleBalloon.cs
-res://UI/TalkBalloon/DialogueBalloon.cs
-res://Scripts/ContollerSystem/Dialoge/DialogueController.cs
-res://Scripts/ContollerSystem/LevelController.cs
-res://Scenes/UiSystem/IntroContoller.cs
-res://Scripts/Record/ScheduleRecorder.cs
-res://addons/dialogue_manager/DialogueManager.cs
-res://Scripts/ContollerSystem/AudioSystem.cs
-res://Scenes/UiSystem/ScriptConroller.cs
+res://Dialogue/Character/Siro.tres

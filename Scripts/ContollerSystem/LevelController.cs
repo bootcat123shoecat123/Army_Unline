@@ -4,10 +4,11 @@ using System.Xml.Schema;
 using ArmyUnline.Scripts.Enums;
 using System.IO;
 using Scripts.Enums;
+using DialogueManagerRuntime;
 public partial class LevelController:Node
 {
 	public static Node CurrentScene;
-    public static GameFlag gameFlag;
+    public static GameFlagState gameFlagState;
     public static LevelController levelControllerInstance { get; private set; }
                                                   // Called when the node enters the scene tree for the first time.
     public override void _Ready()
@@ -42,18 +43,18 @@ public partial class LevelController:Node
 		switch (scene)
 		{
             case SceneTypes.Script:
-                gameFlag.runSceneType=SceneTypes.Script;
+                gameFlagState.runSceneType=SceneTypes.Script;
                 CallDeferred(MethodName.DeferredGotoScene, "res://Scenes/GameLevel/ScriptScene.tscn");
                 
 				return;
 			case SceneTypes.Live:
-                gameFlag.runSceneType = SceneTypes.Live;
+                gameFlagState.runSceneType = SceneTypes.Live;
                 break;
 			case SceneTypes.HScene:
-                gameFlag.runSceneType = SceneTypes.HScene;
+                gameFlagState.runSceneType = SceneTypes.HScene;
                 break;
 			case SceneTypes.War:
-                gameFlag.runSceneType = SceneTypes.War;
+                gameFlagState.runSceneType = SceneTypes.War;
                 break;	
 			default:
 				break;
@@ -61,4 +62,5 @@ public partial class LevelController:Node
 		//
 
 	}
+    
 }

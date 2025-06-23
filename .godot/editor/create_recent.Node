@@ -1,8 +1,9 @@
+Sprite2D
+Label
+Control
+Button
 OptionButton
 MenuButton
-Button
-Control
-Sprite2D
 Node2D
 Container
 VBoxContainer
@@ -11,5 +12,3 @@ NinePatchRect
 MarginContainer
 CenterContainer
 Node
-TextureButton
-Window

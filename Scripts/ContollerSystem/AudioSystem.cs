@@ -79,13 +79,16 @@ public partial class AudioSystem : Node
         }
     }
 
-    // Called every frame. 'delta' is the elapsed time since the previous frame.
-    public override void _Process(double delta)
-    {
-    }
+    
 
-    public void PlayAudio(AudioType audioType, string audioName,bool isLoop=false)
+    public void PlayAudio(AudioType audioType, string audioName,bool isLoop=false,bool isKeepCurrentAudio=true)
     {
+        if (isKeepCurrentAudio)StopAllAudio(audioType);
+        if (string.IsNullOrEmpty(audioName)){
+            GD.Print("No Audio Play");
+            return;
+
+        }
 
         if (!songList.ContainsKey(audioType))
         {
@@ -102,12 +105,6 @@ public partial class AudioSystem : Node
         var audio = songList[audioType].FirstOrDefault(song => 
             song.ResourcePath.GetFile().Replace(".mp3", "") == audioName);
 		
-		if(audioType ==AudioType.BGM){
-			StopAllAudio(AudioType.BGM);
-		}
-		if(audioType ==AudioType.HSE){
-			StopAllAudio(AudioType.HSE);
-		}
 		
 
         if (audio != null)

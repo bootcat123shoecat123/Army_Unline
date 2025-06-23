@@ -43,8 +43,8 @@ public partial class IntroContoller : Node2D
         
         if (animationName.Equals("fade_in"))
         {         
-            LevelController.gameFlag=new GameFlag();
-            LevelController.gameFlag.dialogueFlag = GD.Load<Resource>("res://Dialogue/StaticPlot/Intro001.dialogue");
+            LevelController.gameFlagState=new GameFlagState();
+            LevelController.gameFlagState.gameFlag=GameFlagEnums.Intro001;
             LevelController.levelControllerInstance.LoadLevel(SceneTypes.Script);
         }
            // LevelController.levelController.LoadLevel(SceneTypes.Script);
